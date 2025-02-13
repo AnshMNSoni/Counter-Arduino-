@@ -1,9 +1,9 @@
 # Arduino Counter with 20x4 LCD Display
 
-## Overview
+## 👉 Overview
 This project is a simple counter using an **Arduino UNO**, a **20x4 I2C LCD display**, and two push buttons. The counter value is displayed on the LCD, and the buttons allow users to increment or decrement the count.
 
-## Features
+## 👉 Features
 - Uses an **Arduino UNO** as the main controller.
 - Displays the counter value on a **20x4 LCD screen** with **I2C communication**.
 - **Red Button**: Increases the count by **1**.
@@ -11,7 +11,7 @@ This project is a simple counter using an **Arduino UNO**, a **20x4 I2C LCD disp
 - **Debounce logic** to prevent multiple counts from a single press.
 - Power-efficient design using internal pull-up resistors for button inputs.
 
-## Components Used
+## 👉 Components Used
 | Component          | Specification    |
 |-------------------|----------------|
 | Arduino UNO      | Microcontroller Board |
@@ -22,11 +22,11 @@ This project is a simple counter using an **Arduino UNO**, a **20x4 I2C LCD disp
 | Jumper Wires     | Male-to-Male, Male-to-Female |
 | Breadboard       | For easy wiring |
 
-## Circuit Diagram:
+## 👉 Circuit Diagram:
 
 ![Screenshot 2025-02-13 210033](https://github.com/user-attachments/assets/dd6a9487-5958-4417-a609-2347a2334f5f)
 
-## Wiring Diagram
+## 👉 Wiring Diagram
 - **LCD I2C Module**:
   - VCC → 5V (Arduino UNO)
   - GND → GND (Arduino UNO)
@@ -38,30 +38,30 @@ This project is a simple counter using an **Arduino UNO**, a **20x4 I2C LCD disp
 
 #### 📌 Note: LED is Optional.
 
-## How It Works
+## 👉 How It Works
 1. The LCD initializes and displays "Counter: 0" at startup.
 2. Pressing the **red button** increases the count by **1**.
 3. Pressing the **green button** decreases the count by **1**.
 4. The updated counter value is displayed on the LCD in real time.
 5. A software debounce mechanism prevents unintended multiple increments/decrements.
 
-## Installation & Usage
+## 👉 Installation & Usage
 1. Clone this repository or download the code.
 2. Connect the components as per the wiring diagram.
 3. Upload the Arduino sketch to the **Arduino UNO** using the **Arduino IDE**.
 4. Observe the counter on the **LCD display** and use the buttons to modify the count.
 
-## Dependencies
+## 👉 Dependencies
 Ensure you have the following libraries installed in the **Arduino IDE**:
 - `Wire.h` (Built-in for I2C Communication)
 - `LiquidCrystal_I2C.h` (For I2C LCD control)
 
-## Future Improvements
+## 👉 Future Improvements
 - Add EEPROM storage to retain the count after power loss.
 - Implement an OLED display version for compact designs.
 - Add a reset button to reset the counter to zero.
 
-## License
+## 👉 License
 This project is open-source and available under the **MIT License**. Feel free to use and modify it.
 
 ---
